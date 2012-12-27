@@ -1,0 +1,31 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  
+  <head>
+    <meta charset="UTF-8">
+    <title></title>
+  </head>
+  
+  <body>
+    <h1>margin collapsing</h1>
+    <div style="background:skyBlue">
+      <p style="margin:20px">margin:20px</p>
+    </div>
+    <div style="background:skyBlue">
+      <p style="margin:20px">margin:20px</p>
+    </div>
+    <div style="background:skyBlue;overflow:hidden;">
+      <p style="margin:20px">overflow:hidden;</p>
+    </div>
+    <div style="clear:both;">
+      <h1>float</h1>
+      <div style="background:skyBlue">
+        <p style="float:left;margin:20px">float:left;</p>
+      </div>
+      <div style="background:skyBlue;overflow:hidden;clear:left;">
+        <p style="float:left;margin:20px">overflow:hidden;</p>
+      </div>
+    </div>
+  </body>
+
+</html>
