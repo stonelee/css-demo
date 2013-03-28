@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title></title>
+  <style>
+    .enter{
+      padding:4px 3px 5px;
+      color:#666;
+      background-color:#fff;
+      border:1px solid #999;
+
+      -moz-border-radius:2px;
+      border-radius:2px;
+
+      -moz-box-shadow:inset 1px 1px 2px rgba(0,0,0,.2);     /* For Firefox3.6+ */
+      -webkit-box-shadow:inset 1px 1px 2px rgba(0,0,0,.2);  /* For Chrome5+, Safari5+ */
+      box-shadow:inset 1px 1px 2px rgba(0,0,0,.2);          /* For Latest Opera */
+    }
+    .enter:hover{
+      -moz-box-shadow:inset 1px 1px 3px rgba(0,0,0,.3);     /* For Firefox3.6+ */
+      -webkit-box-shadow:inset 1px 1px 3px rgba(0,0,0,.3);  /* For Chrome5+, Safari5+ */
+      box-shadow:inset 1px 1px 3px rgba(0,0,0,.3);          /* For Latest Opera */
+    }
+    .enter:focus{
+      outline:none;
+
+      -moz-box-shadow:0 0 5px rgba(0,0,0,.5);     /* For Firefox3.6+ */
+      -webkit-box-shadow:0 0 5px rgba(0,0,0,.5);  /* For Chrome5+, Safari5+ */
+      box-shadow:0 0 5px rgba(0,0,0,.5);          /* For Latest Opera */
+    }
+  </style>
+</head>
+<body>
+  <input type="text" class="enter"/>
+  <textarea class="enter" rows="8" cols="40"></textarea>
+</body>
+</html>

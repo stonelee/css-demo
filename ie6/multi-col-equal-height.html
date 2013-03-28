@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title></title>
+  <style type="text/css">
+    #container{
+      overflow:hidden;
+    }
+    .box{
+      float:left;
+      padding-bottom:2000px;
+      margin-bottom:-2000px;
+    }
+    #left{
+      background:green;
+    }
+    #right{
+      background:blue;
+    }
+  </style>
+</head>
+<body>
+  <div id="container">
+    <div id="left" class="box">我是left</div>
+    <div id="right" class="box">我是right<br><br><br>现在我的高度比left高，但left用它的padding-bottom补偿了这部分高度</div>
+  </div>
+</body>
+</html>

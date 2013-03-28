@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title></title>
+  <style type="text/css">
+    #demo div{
+      position:relative;
+      width:300px;
+      vertical-align:top;
+
+      display:inline-block;
+      *display:inline;
+      *zoom:1;
+
+      /*避免溢出*/
+      _overflow:hidden;
+    }
+    #demo span{
+      position:absolute;
+      left:0;
+      top:0;
+      width:100%;
+      height:100%;/*作为整个容器的遮罩*/
+
+      background-color: green;
+      opacity:.7;
+      filter:alpha(opacity=70);     /* For IE */
+
+      /*IE6不支持100%*/
+      _padding-bottom: 500px;
+    }
+  </style>
+</head>
+<body>
+  <div id="demo">
+    <div>
+      <p>我的高度其实是没有定义的，内容有多少我就有多高。</p>
+      <p>我的高度其实是没有定义的，内容有多少我就有多高。</p>
+      <span class="mask"></span>
+    </div>
+    <div>
+      <p>我的高度其实是没有定义的，内容有多少我就有多高。</p>
+      <p>我的高度其实是没有定义的，内容有多少我就有多高。</p>
+      <p>我的高度其实是没有定义的，内容有多少我就有多高。</p>
+      <p>我的高度其实是没有定义的，内容有多少我就有多高。</p>
+      <p>我的高度其实是没有定义的，内容有多少我就有多高。</p>
+      <span class="mask"></span>
+    </div>
+  </div>
+</body>
+</html>
