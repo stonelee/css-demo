@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>未知尺寸元素水平垂直居中</title>
+  <meta charset="utf-8">
+  <style type="text/css">
+    .align{
+      text-align:center;
+
+      /* inline-block之间有空隙,所以after被过长文字挤换行,因此需要去掉空隙 */
+      font-size:0;
+
+      width:100px;
+      height:100px;
+      background:gray;
+    }
+    .align:after, .align span{
+      display:inline-block;
+      *display:inline;
+      *zoom:1;
+      width:0;
+      height:100%;
+      vertical-align:middle;
+    }
+    .align:after{
+      content:'';
+    }
+    .align p{
+      display:inline-block;
+      *display:inline;
+      *zoom:1;
+      vertical-align:middle;
+
+      font-size:12px;
+    }
+  </style>
+</head>
+<body>
+  <div class="align">
+    <p>abcdef dsfe dsfdsf dsf</p>
+    <!--[if lt IE 8]><span></span><![endif]-->
+  </div>
+</body>
+</html>

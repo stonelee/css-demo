@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+  <meta charset="utf-8" />
+  <style type="text/css">
+    #container{
+      font-size: 0;
+      /*消除IE7以下1px间隔*/
+      *word-spacing:-1px;
+
+      text-align:center;
+    }
+    .box{
+      display: inline-block;
+      *display:inline;
+      *zoom:1;
+      font-size: 12px;
+
+      border: 1px solid;
+    }
+  </style>
+</head>
+<body>
+  <div id="container">
+    <span class="box">one</span>
+    <div class="box">two</div>
+    <span class="box">three</span>
+    <div class="box">four</div>
+  </div>
+</body>
+</html>
