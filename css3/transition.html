@@ -59,16 +59,53 @@
     .love:hover {
       background-color: #D91E76;
     }
+
+    .team {
+      overflow: hidden;
+      padding: 10px;
+      background: #2A2A2A;
+    }
+    .team a {
+      border-bottom: 1px solid #999;
+      font-weight: bold;
+      text-decoration: none;
+      color: #FAFAFA;
+    }
+    .team a:hover {
+      margin-left: -10px;
+      padding-left: 10px;
+      border-color: #D9D9D9;
+      color: #D91E76;
+      -webkit-transition: all .2s ease-out;
+    }
+    .team a:hover img {
+      border-color: #D9D9D9;
+    }
+    .team img {
+      float: left;
+      margin-right: 10px;
+      border: 1px solid #141414;
+      -webkit-transition: border-color .3s ease-out;
+    }
+    .team p {
+      margin: 0;
+      color: #999;
+    }
   </style>
 </head>
 <body>
-  <div class="link">
-    <img class="logo" src="logo-x12.png" alt="" />
-    <ul>
-      <li><a href="#" class="icon twitter">Twitter</a></li>
-      <li><a href="#" class="icon github">GitHub</a></li>
-      <li><a href="#" class="icon love">love</a></li>
-    </ul>
+  <img class="logo" src="logo-x12.png" alt="" />
+  <ul>
+    <li><a href="#" class="icon twitter">Twitter</a></li>
+    <li><a href="#" class="icon github">GitHub</a></li>
+    <li><a href="#" class="icon love">love</a></li>
+  </ul>
+  <div class="team">
+    <a href="#">
+      <img src="Paul-Irish.jpg" width="48" height="48" alt="" />
+      Paul-Irish
+    </a>
+    <p>Lead Developer</p>
   </div>
 </body>
 </html>
