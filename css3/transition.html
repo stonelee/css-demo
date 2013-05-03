@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title></title>
+  <style type="text/css">
+    .logo:hover {
+      -webkit-animation: rotatein 1s ease-in-out;
+    }
+    @-webkit-keyframes rotatein {
+        0% { -webkit-transform: rotate(0); }
+      100% { -webkit-transform: rotate(360deg); }
+    }
+    @-webkit-keyframes rotateout {
+        0% { -webkit-transform: rotate(0); }
+      100% { -webkit-transform: rotate(-360deg); }
+    }
+
+    ul {
+      list-style: none;
+    }
+    .icon {
+      display: block;
+      width: 38px;
+      height: 38px;
+      margin-bottom: 10px;
+
+      border-radius: 19px;
+      line-height: 38px;
+      text-indent: 50px;
+      text-decoration: none;
+      color: #222;
+
+      background: url('icons.png') no-repeat;
+      -webkit-box-shadow: rgba(0, 0, 0, .28) 0 2px 3px;
+      -webkit-transition: width .25s ease-in-out, background-color .25s ease-in-out;
+    }
+    .icon:hover {
+      width: 208px;
+    }
+    .twitter {
+      background-position: 3px -50px;
+      background-color: rgba(45, 118, 185, .42);
+    }
+    .twitter:hover {
+      background-color: #2D76B9;
+    }
+    .github {
+      background-position: 3px -100px;
+      background-color: rgba(255, 109, 0, .42);
+    }
+    .github:hover {
+      background-color: #FF6D00;
+    }
+    .love {
+      background-position: 3px 0;
+      background-color: rgba(217, 30, 118, .42);
+    }
+    .love:hover {
+      background-color: #D91E76;
+    }
+  </style>
+</head>
+<body>
+  <div class="link">
+    <img class="logo" src="logo-x12.png" alt="" />
+    <ul>
+      <li><a href="#" class="icon twitter">Twitter</a></li>
+      <li><a href="#" class="icon github">GitHub</a></li>
+      <li><a href="#" class="icon love">love</a></li>
+    </ul>
+  </div>
+</body>
+</html>
