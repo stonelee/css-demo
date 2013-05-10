@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>分页打印</title>
+  <style type="text/css">
+    table {
+      margin-bottom: 10px;
+
+      width: 100%;
+      border-collapse: collapse;
+      border-spacing: 0;
+    }
+    th,td {
+      border-width: 1px;
+      border-style: solid;
+    }
+    th {
+      background: gray;
+    }
+    .page td {
+      border-width: 0;
+    }
+    .page div {
+      page-break-after: always;
+    }
+  </style>
+</head>
+<body>
+  <table>
+    <tbody>
+      <tr><th>title1</th><th>title2</th><th>title3</th></tr>
+      <tr><td>1</td><td>2</td><td>3</td></tr>
+      <tr><td>1</td><td>2</td><td>3</td></tr>
+      <tr><td>1</td><td>2</td><td>3</td></tr>
+      <tr><td>1</td><td>2</td><td>3</td></tr>
+      <tr><td>1</td><td>2</td><td>3</td></tr>
+      <tr><td>1</td><td>2</td><td>3</td></tr>
+      <tr><td>1</td><td>2</td><td>3</td></tr>
+      <tr class="page"><td colspan="3"><div></div></td></tr>
+      <tr><th>title1</th><th>title2</th><th>title3</th></tr>
+      <tr><td>1</td><td>2</td><td>3</td></tr>
+      <tr><td>1</td><td>2</td><td>3</td></tr>
+      <tr><td>1</td><td>2</td><td>3</td></tr>
+      <tr class="page"><td colspan="3"><div></div></td></tr>
+      <tr><th>title1</th><th>title2</th><th>title3</th></tr>
+      <tr><td>1</td><td>2</td><td>3</td></tr>
+      <tr><td>1</td><td>2</td><td>3</td></tr>
+      <tr><td>1</td><td>2</td><td>3</td></tr>
+      <tr><td>1</td><td>2</td><td>3</td></tr>
+      <tr><td>1</td><td>2</td><td>3</td></tr>
+      <tr><td>1</td><td>2</td><td>3</td></tr>
+      <tr><td>1</td><td>2</td><td>3</td></tr>
+      <tr><td>1</td><td>2</td><td>3</td></tr>
+      <tr><td>1</td><td>2</td><td>3</td></tr>
+      <tr><td>1</td><td>2</td><td>3</td></tr>
+      <tr><td>1</td><td>2</td><td>3</td></tr>
+      <tr class="page"><td colspan="3"><div></div></td></tr>
+      <tr><th>title1</th><th>title2</th><th>title3</th></tr>
+      <tr><td>1</td><td>2</td><td>3</td></tr>
+      <tr><td>1</td><td>2</td><td>3</td></tr>
+      <tr><td>1</td><td>2</td><td>3</td></tr>
+      <tr><td>1</td><td>2</td><td>3</td></tr>
+      <tr><td>1</td><td>2</td><td>3</td></tr>
+      <tr><td>1</td><td>2</td><td>3</td></tr>
+      <tr><td>1</td><td>2</td><td>3</td></tr>
+      <tr><td>1</td><td>2</td><td>3</td></tr>
+      <tr><td>1</td><td>2</td><td>3</td></tr>
+      <tr><td>1</td><td>2</td><td>3</td></tr>
+      <tr><td>1</td><td>2</td><td>3</td></tr>
+      <tr><td>1</td><td>2</td><td>3</td></tr>
+      <tr><td>1</td><td>2</td><td>3</td></tr>
+    </tbody>
+  </table>
+  <p>abc</p>
+  
+</body>
+</html>
